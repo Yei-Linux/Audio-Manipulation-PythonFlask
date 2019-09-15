@@ -20,12 +20,12 @@ By default we add to two users,admin and user.
 Usuario:user
 Contraseña:user
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/Login.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/Login.PNG)
 
 SignUp:
 We can add more users in our web.
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/Registrar.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/Registrar.PNG)
 
 Home:
 In main page we have a lot of functions to manipulate the audio:
