@@ -32,36 +32,36 @@ In main page we have a lot of functions to manipulate the audio:
 
 -Connvert MP3 to WAV:
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/Convert1.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/Convert1.PNG)
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/Convert2.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/Convert2.PNG)
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/Convert3.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/Convert3.PNG)
 
 -Split by second:
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/DividirPorSeg.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DividirPorSeg.PNG)
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/DividirPorSeg2.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DividirPorSeg2.PNG)
 
 -Split by equals Parts:
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/DividirPorPartesIgu.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DividirPorPartesIgu.PNG)
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/DividirPorPartesIgu2.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DividirPorPartesIgu2.PNG)
 
 -Last Functions:
 
 --Decrease Speed:
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/DisminuirVelocidad.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DisminuirVelocidad.PNG)
 
 --AddNoise
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/AgregarRuido.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/AgregarRuido.PNG)
 
 --OnlyVoice
 
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/tree/master/imgs/SoloVoz.PNG)
+![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/SoloVoz.PNG)
 
 
