@@ -7,8 +7,11 @@ This is an audio manipulation web made in Python(Flask) with the objetive of man
 Requirements:
 First we have to type on cmd 
 
-pip install requirements.txt
-
+```
+		
+	pip install requirements.txt
+		
+```
 Then if you want to use mysql, turn on first,then run the script:
 
 python servidor.py(By default run in 4555 port,but you can change if you want)
