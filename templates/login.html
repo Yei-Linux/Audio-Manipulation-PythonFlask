@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='estilos22.css') }}">
+    <title>{{data}}</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!--------------------------->
+    <!-----------JQUERY---------->
+    <!--------------------------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <style>
+
+        html,body{
+
+            height: 100%;
+
+        }
+		
+		.logo{
+			margin-right: -20px;
+		}
+		
+	</style>
+
+</head>
+<body>
+
+		<div id="particles-js"></div>
+
+        <!--------------------------->
+        <!-----------MENU------------>
+        <!--------------------------->
+
+        <div class="menu">
+            <div class="logo">
+                <img src="{{url_for('static',filename='logo.png')}}" alt=""> 
+                <div class="texto">
+                    <p>Conversor</p>
+                </div>
+            </div>
+            <div class="login">
+                <a href="http://127.0.0.1:4555/login" class="iniciar">Iniciar Sesion</a>
+                <a href="http://127.0.0.1:4555/registrar" class="registrar2">Registrarse</a>
+            </div>
+        </div>
+
+        <!--------------------------->
+        <!---------REGISTER---------->
+        <!--------------------------->
+
+       <section class="registrar">
+           <h2 class="registrarTitulo" >Iniciar Sesión</h2>
+
+                <form class="registrarFormulario" action="checkUser" method="post">
+                    <input class="input"   type="text" name="user" placeholder="username">
+                    <input class="input" type="password" name="password" placeholder="password">
+                    <input class="iniciarBoton" type="submit" value="Iniciar Sesión">
+                </form>
+
+       </section>
+
+    <!--------------------------->
+    <!-----------SCRIPTS--------->
+    <!--------------------------->
+
+    <script src="{{url_for('static',filename='particles.js') }}"></script>
+    <script src="{{url_for('static',filename='app.js') }}"></script>
+
+</body>
+
+</html>

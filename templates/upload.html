@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='estilos22.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<style>
+
+		body{
+			font-family: fontana;
+			padding-bottom: 13%;
+		}
+		.contenedor{
+			margin-left: -100px;
+			margin-top: 50px;
+			border: 1px solid white;
+			border-radius: .6em;
+			padding: 3%;
+		}
+		.eleccion{
+			margin-top: 50px;
+			margin-left: 90px;
+			border: 1px solid white;
+			padding: 3%;
+			border-radius: .6em;
+			
+		}
+		.divis{
+			border: 1px solid white;
+			padding: 3%;
+			border-radius: .6em;
+		}
+		.btn{
+			padding: 10px 20px;
+			border-radius: .6em;
+			background: black;
+			color: white;
+
+		}
+		#aud{
+			width: 40%;
+		}
+		
+		.eleccion h3{
+			margin-left: 25%;
+		}
+		.btn:hover{
+			
+			padding: 10px 25px;
+		}
+	
+	</style>
+
+</head>
+
+<body >
+
+    <div id="particles-js"></div>
+
+    <div class="menu">
+
+        <div class="logo">
+            <img src="{{url_for('static',filename='logo.png')}}" alt="">
+            <div class="texto">
+                <p>Conversor</p>
+            </div>
+        </div>
+
+        <div class="login">
+            <a href="http://127.0.0.1:4555/login    " class="iniciar">Cerrar Sesion</a>
+            <a href="http://127.0.0.1:4555/registrar" class="registrar2">Mi Lista</a>
+        </div>
+
+    </div>
+
+    
+
+    <div class="main">
+
+
+        <div class="audio" >
+                <audio id="aud" controls="controls" autoplay="autoplay"></audio>
+            </div>
+
+            <form id="upload-form" action="/upload" method="POST"
+            enctype="multipart/form-data" class="botones">
+                <input type="file"  class="btn" value="Buscar" name="file">
+                <input type="submit" class="btn" value="Convertir" onclick="change('{{music}}')" >
+
+            </form>
+
+
+        <div class="divis">
+            <div class="titulo2">
+                <h3>DIVISION POR SEGUNDO</h3>
+            </div>
+            <form aid="" action="{{url_for('upload3')}}" method="POST"
+                enctype="multipart/form-data">
+                <div class="tipo" id="dos">
+                    <div colspan="4" class="ondas" background="{{url_for('static',filename='') }}" >
+                        <input onChange="sliderChange()" type="range" id="musica" min="0" max="{{duracion}}" step="1" class="rango" list="tickmarks">
+                          <datalist id="tickmarks">
+                              <option value="0" label="0%">
+
+                              <option value="400" label="50%">
+
+                              <option value="800" label="100%">
+                          </datalist>
+                    </div>
+                    <div class="contenedor-partes">
+                        <div class="partes">
+                            <h3 class="tituloParte">Primera Parte</h3>
+                            <div class="principio">
+                                <p>Desde:</p>
+                                <input type="text" name="start1" value="0">
+                            </div>
+                            <div class="final">
+                                <p>Hasta:</p>
+                                <input type="text" id="final" name="end1" value="">
+                            </div>
+                        </div>
+                        <div class="partes">
+                            <h3 class="tituloParte">Segunda Parte</h3>
+                            <div class="principio">
+                                <p>Desde:</p>
+                                <input type="text" id="principio" name="start2" value="">
+                            </div>
+                            <div class="final">
+                                <p>Hasta:</p>
+                                <input type="text" name="end2" value='{{duracion}}'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="word" colspan="2"><input class="btn" id="dividir2" type="submit" value="Dividir"></div>
+                </div>
+            </form>
+        </div>
+
+        <div class="divis">
+
+            <h3>DIVISIÓN POR PARTES IGUALES</h3>
+            <form id="upload-form" action="{{url_for('upload2')}}" method="POST"
+                enctype="multipart/form-data">
+
+
+                <div class="contenedor-radio" id="uno">
+                    <div class="radio">
+                        <input type="radio" name="cantidad" value="1">
+                        <p>Uno</p>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="cantidad" value="2">
+                        <p>Dos</p>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="cantidad" value="3">
+                        <p>Tres</p>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="cantidad" value="4">
+                        <p>Cuatro</p>
+                    </div>
+                    <div class="radio">
+                        <input type="text" name="cantidad" value="Escribe otra opcion...">
+                    </div>
+                </div>
+
+                <div class="contenedor-btn">
+                    <input type="submit" class="btn" id="dividir1" value="Dividir">
+                </div>
+
+            </form>
+
+            </div>
+            
+            
+            <div class="contenedor">
+               
+                <h3>DISMINUIR LA VELOCIDAD</h3>
+
+                 <form  action="{{url_for('upload4')}}" method="POST"
+                     enctype="multipart/form-data">
+
+                    <center>
+						<select  name="cantidad" class="lista"  id="Lista">
+						<option value="X0.5" name="cantidad">X0.5</option>
+						<option value="X1.0" name="cantidad">X1.0</option>
+						<option value="X1.5" name="cantidad">X1.5</option>
+						<option value="X2.0" name="cantidad">X2.0</option>
+						</select>
+                    <input type="submit" class="btn" id="dividir3" value="Reducir" name="boton">
+                    </center>
+                    
+                    
+                    </form>
+            </div>
+
+
+            <div class="eleccion">
+               
+                <h3>AÑADIR RUIDO</h3>
+                     
+                    <div class="contenedor-ruido">
+                    
+                    <form  action="{{url_for('upload5')}}" method="POST"
+                     enctype="multipart/form-data">
+						<div class="ruido">
+						<input type="submit" class="btn" id="dividir4" value="Al inicio">
+						</div>
+                    </form>
+                    
+                     <form  action="{{url_for('upload6')}}" method="POST"
+                     enctype="multipart/form-data">
+						<div class="ruido">
+						<input type="submit" class="btn" id="dividir5" value="Al final">
+						</div>
+                     </form>
+                     
+					</div>
+
+            </div>
+            
+             <div class="eleccion">
+               
+                <h3>EXTRACCION DE VOZ/FONDO</h3>
+
+					
+                    <div class="contenedor-ruido">
+                    
+                    <form  action="{{url_for('upload8')}}" method="POST"
+                     enctype="multipart/form-data">
+                     
+						<div class="ruido">
+						<input type="submit" class="btn" id="dividir4" value="Solo Voz">
+						</div>
+                 	
+                  	</form>
+                  	
+                   	<form  action="{{url_for('upload7')}}" method="POST"
+                     enctype="multipart/form-data">
+                    
+						<div class="ruido">
+						<input type="submit" class="btn" id="dividir5" value="Solo Fondo">
+						</div>
+                   
+                    </form>
+                    
+                    
+                    </div>
+
+            </div>
+        
+    </div>
+
+    <script>
+        
+       $(document).ready(function (){
+
+            $("#aud").attr('src','{{music}}');
+           
+        });
+        
+        function sliderChange(){
+            var get=document.getElementById("musica").value;
+            document.getElementById("final").value=parseInt(get); 
+            document.getElementById("principio").value=parseInt(get)+1;   
+        }
+    
+    </script>
+    
+    <script src="{{url_for('static',filename='particles.js') }}"></script>
+    <script src="{{url_for('static',filename='app.js') }}"></script>
+    
+</body>
+</html>

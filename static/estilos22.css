@@ -1,0 +1,459 @@
+*{
+
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background:#000500;
+    color:#f2f2f2;
+    margin: 0px;
+
+    position: relative;
+    
+}
+
+/*------------------------*/
+/*-------PARTICLES--------*/
+/*------------------------*/
+
+#particles-js{
+
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    
+    background-attachment: inherit;
+    z-index:-1;
+
+
+}
+
+/*------------------------*/
+/*-------REGISTER---------*/
+/*------------------------*/
+
+.registrar{
+    
+    z-index: 1;
+    text-decoration: none;
+    
+    padding: 2px 4px;
+
+    width: 100%;
+    height: 90%;
+    text-decoration: none;
+    padding-top: 10%;
+
+}
+
+.registrarTitulo{
+    text-align: center;
+    margin: auto;
+    color: #277df7;
+    margin: 20px;
+}
+
+.registrarFormulario{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.registrar .input{
+    width: 30%;
+    margin: auto;
+    padding: 10px 5px;
+    background: #2f2f2f;
+    color: #f2f2f2;
+    margin: 20px auto;
+    border: 1px solid #7f7f7f;
+    border-radius: 5px;
+}
+
+.registrar .input:hover{
+
+    border: 1px solid #fff;
+}
+
+.registrar .input::placeholder{
+    color: #f2f2f2;
+}
+
+/*----------------------------------*/
+
+.registrar .registrarBoton{
+   
+    width: 100px;
+    margin: 20px auto;
+    padding: 8px;
+    text-align: center;
+    background: #000500;
+    border-radius: 8px;
+    border: 1px solid #727171;
+    color: #f2f2f2;
+
+}
+
+.registrar .registrarBoton:hover{
+    cursor: pointer;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    transition: .2s;
+}
+
+
+.registrar p{
+    text-align: center;
+}
+
+
+/*------------------------*/
+/*----------LOGIN---------*/
+/*------------------------*/
+
+.iniciarBoton{
+   width: 120px;
+    margin: 20px auto;
+    padding: 8px;
+    text-align: center;
+    background: #000500;
+    border-radius: 8px;
+    border: 1px solid #727171;
+    color: #f2f2f2;
+}
+
+.iniciarBoton:hover{
+    cursor: pointer;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    transition: .2s;
+}
+
+/*-----------------------------*/
+/*-------------MENU------------*/
+/*-----------------------------*/
+
+.menu{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    
+    border-bottom: 1px solid #2e2d2d;
+    margin-top:0px;
+    z-index: 1;
+}
+
+.logo{
+
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-content: center;
+
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    margin: auto 20px;
+
+}
+
+.texto{
+    font-weight: bold;
+    margin: auto;
+}
+
+.texto > p{
+    line-height: 14px;
+    font-size: 28px;
+}
+
+.login {
+    display: flex;
+}
+
+.login > a {
+   display: inline-block;
+    text-decoration: none;
+    border: 1px solid #424242;
+    padding: 8px 16px;
+    margin: auto 10px;
+    border-radius: 10px;
+    color: #f2f2f2;
+    font-size: 14px;
+}
+
+.login > a:hover{
+    border: 1px solid #fff;
+}
+
+.iniciar{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #424242;
+    padding: 2px 4px;
+    margin: auto;
+}
+
+/*-------------------------------*/
+/*-------------MAIN--------------*/
+/*-------------------------------*/
+
+.main{
+
+    z-index: 1000;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    background-size: cover;
+    
+}
+
+.main .titulo{
+    width:  80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.titulo h3{
+    color: #277df7;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .4px;
+    text-align: center;
+
+}
+
+.titulo p{
+    font-size: 14px;
+    color: #ccc;
+    letter-spacing: .4px;
+}
+
+.contenedor-conversor{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background: url('bg.jpg');
+    background-size: 30%;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subir{
+  width: 60%;
+    margin: 20px auto;
+    background: #000500;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+/*------------------------*/
+/*---------OTHERS---------*/
+/*------------------------*/
+
+.contenedor-partes{
+
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+ .titulo2 h3, .divis h3{
+    text-align: center;
+     margin-top: 20px;
+
+}
+
+.divis .contenedor-radio{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.divis .radio{
+    display: flex;
+    justify-content: space-around;
+}
+
+.divis .radio input{
+    margin: 10px;
+}
+
+
+.contenedor-btn{
+    margin: auto auto 40px auto;
+    text-align: center;
+}
+
+
+
+.divis{
+
+    width: 90%;
+    margin-top: 50px;
+}
+
+
+    .divis .titulo1{
+
+        border-radius: 4px;
+        display: inline-block;
+        padding: 15px;
+        margin-bottom: 55px;
+    }
+
+    .divis .word{
+         margin: 20px auto;
+        text-align: center;
+
+    }
+
+    .divis .otro{
+        display: inline-block;
+        padding: 5px;
+        margin-top: 19px;
+    }
+
+    .archivo{
+        visibility: hidden;
+    }
+
+#dos{
+
+}
+
+    .ondas{
+        background-color: aqua;
+        background: url('audio.png');
+    }
+    .divis .rango{
+        display: inline-block;
+        width: 100%;
+        margin: 40px auto;
+
+
+    }
+
+    .divis #frase1{
+        margin-left: 10%;
+        margin-right: 25%;
+    }
+    #dividir2{
+
+        margin-top: 40px;
+    }
+    .archivo2{
+        margin-left: -30%;
+        margin-top: 60%;
+        visibility: hidden;
+    }
+
+
+
+.subir:hover{
+    cursor: pointer;
+     box-shadow: 1px 1px 4px #2f2f2f;
+    transition: .2s;
+
+}
+
+.subir p{
+    margin: auto;
+    font-size: 18px;
+}
+
+.icono{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.fa-dropbox{
+    font-size: 24px;
+    display: inline-block;
+    margin: auto 14px;
+    color: #c3c3c3;
+}
+
+.fa-desktop{
+    font-size: 20px;
+    margin: auto 14px;
+    color: #c3c3c3;
+}
+
+
+.fa-google-drive{
+    font-size: 24px;
+    margin: auto 14px;
+    color: #c3c3c3;
+}
+
+.ico:hover{
+    color:#fff;
+    cursor: pointer;
+}
+
+
+.audio{
+    width: 80%;
+    height: 100px;
+
+    margin: 20px auto;
+    background: rgba(0,0,0,.8);
+}
+
+.audio audio{
+    margin-top: 30px;
+    margin-left: 30%;
+    
+}
+
+
+.btn[type='file'] {
+  color: transparent;
+}
+
+.btn:hover{
+    cursor: pointer
+}
+
+.contenedor .btn{
+    text-align:center;
+    margin: 30px;
+
+}
+
+.eleccion .contenedor-ruido{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 20%;
+    margin: 40px auto;
+}
+.eleccion .ruido{
+    display: flex;
+    justify-content: space-around;
+}
+.eleccion .ruido input{
+     margin: 10px;
+}

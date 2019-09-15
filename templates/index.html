@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='estilos22.css')}}">
+    <title>{{tittle}}</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style type="text/css">
+        
+        html,body{
+
+            height: 100%;
+
+        }
+
+    </style>
+
+</head>
+
+    <body>
+
+		<div id="particles-js"></div>
+
+        <div class="menu">
+
+            <div class="logo">
+                <img src="{{url_for('static',filename='logo.png')}}" alt="">
+                <div class="texto">
+                    <p>Conversor</p>
+                </div>
+            </div>
+
+            <div class="login">
+                <a href="http://127.0.0.1:4555/login" class="iniciar">Iniciar Sesion</a>
+                <a href="http://127.0.0.1:4555/registrar" class="registrar2">Registrarse</a>
+            </div>
+
+         </div>
+
+       <section class="registrar">
+
+            <h2 class="registrarTitulo" >Registrate</h2>
+
+            <form class="registrarFormulario" action="/signUp" method="post">
+
+                <input class="input"type="text" name="user" placeholder="Usuario">
+
+                <input class="input"type="email" name="email" placeholder="Correo">
+
+                <input class="input"type="password" name="password" placeholder="Contraseña">
+
+                <input class="registrarBoton"type="submit" value="Registrar">
+
+            </form>
+
+       </section>
+
+	<script src="{{url_for('static',filename='particles.js') }}"></script>
+    <script src="{{url_for('static',filename='app.js') }}"></script>
+
+</body>
+
+</html>
