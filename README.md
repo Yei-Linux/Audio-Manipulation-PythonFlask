@@ -1,6 +1,6 @@
 # Audio-Manipulation-PythonFlask
 (Version Python 3.x)
-THIS PROJECT WAS MADE BY Danny Nancay(https://github.com/7eacemaker),Jhan Calderon(https://github.com/JhanChris11/),
+THIS PROJECT WAS MADE BY Danny Nancay(https://github.com/7eacemaker), Jhan Calderon(https://github.com/JhanChris11/),
 Alfredo Chavez(https://github.com/AlfredoChz) and I.
 This is an audio manipulation web made in Python(Flask) with the objetive of manipulate anything kind of audio.
 
