@@ -79,6 +79,6 @@ In main page we have a lot of functions to manipulate the audio:
 </p>
 --OnlyVoice
 <p align="center">
-![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/SoloVoz.PNG)
+	<img src="https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/SoloVoz.PNG">
 </p>
 
