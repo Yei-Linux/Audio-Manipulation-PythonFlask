@@ -43,8 +43,11 @@ We can add more users in our web.
 Home:
 In main page we have a lot of functions to manipulate the audio:
 
--Connvert MP3 to WAV:
-
+```
+<p align="center">
+		-Connvert MP3 to WAV:
+</p>
+```
 ![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/Convert1.PNG)
 
 <p align="center">
@@ -55,38 +58,57 @@ In main page we have a lot of functions to manipulate the audio:
 	<img src="https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/Convert3.PNG">
 </p>
 
--Split by second:
-
+```
+<p align="center">
+		-Split by second:
+</p>
+```
 ![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DividirPorSeg.PNG)
 
 <p align="center">
 	<img src="https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DividirPorSeg2.PNG">
 </p>
-
--Split by equals Parts:
-
+```
+<p align="center">
+		-Split by equals Parts:
+</p>
+```
 ![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DividirPorPartesIgu.PNG)
 
 <p align="center">
 	<img src="https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DividirPorPartesIgu2.PNG">
 </p>
-
--Last Functions:
-
+```
+<p align="center">
+		-Last Functions:
+</p>
+```
 ![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/UltimasFunciones.PNG)
 
---Decrease Speed:
-
+```
+<p align="center">
+		--Decrease Speed:
+</p>
+```
 <p align="center">
 	<img src="https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DisminuirVelocidad.PNG">
 </p>
 
---AddNoise
+```
+<p align="center">
+		--AddNoise
+</p>
+```
+
 <p align="center">
 	<img src="https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/AgregarRuido.PNG">
 </p>
 
---OnlyVoice
+```
+<p align="center">
+		--OnlyVoice
+</p>
+```
 <p align="center">
 	<img src="https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/SoloVoz.PNG">
 </p>
