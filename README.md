@@ -69,18 +69,16 @@ In main page we have a lot of functions to manipulate the audio:
 
 --Decrease Speed:
 
-```
-		
+<p align="center">
 ![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/DisminuirVelocidad.PNG)
-		
-```
+</p>
 
 --AddNoise
-
+<p align="center">
 ![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/AgregarRuido.PNG)
-
+</p>
 --OnlyVoice
-
+<p align="center">
 ![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/SoloVoz.PNG)
-
+</p>
 
