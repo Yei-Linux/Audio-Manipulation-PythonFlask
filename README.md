@@ -14,14 +14,24 @@ First we have to type on cmd
 ```
 Then if you want to use mysql, turn on first,then run the script:
 
-python servidor.py(By default run in 4555 port,but you can change if you want)
+```
+		
+	python servidor.py
+		
+```
+
+(By default run in 4555 port,but you can change if you want)
 
 Login:
 Type in url 127.0.0.1:4555 and we can see the login(Need to implement security and sessions)
 By default we add to two users,admin and user.
 
-Usuario:user
-Contraseña:user
+```
+		
+	Usuario:user
+	Contraseña:user
+		
+```
 
 ![alt tag](https://github.com/Yei-Linux/Audio-Manipulation-PythonFlask/blob/master/imgs/Login.PNG)
 
